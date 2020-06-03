@@ -9,9 +9,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+		    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div>
+
+
+
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#">Urban Threads</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +36,7 @@
 						<a class="nav-link" href="about.html">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="services.html">Services</a>
+						<a class="nav-link" href="services.html">Products</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact Us</a>
@@ -81,10 +91,10 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 about--part1">
 						<img src="images/sec.jpg" class="img-fluid setimg" >
 					</div>
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 about--part2">
 						<h2 class="py-4 display-6 text-center">We're Urban Threads</h2>
 						<p class="py-3">Urban Threads is a fashion forward brand of this age. We're bringing new trends everyweek to surprise our customers. We'll be changing the fashion landscape in Pakistan. We want our customers to be fresh, original and unique, because we're here to bend the trend.
 						</p>
@@ -106,7 +116,7 @@
 							<div class="card-body">
 								<h4 class="card-title">Denim Jeans</h4>
 								<p class="card-text">Quality Denim Jeans</p>
-								<a href="#" class="btn btn-outline-success">See More</a>
+								<a href="services.html" class="btn btn-outline-success">See More</a>
 							</div>
 						</div>
 					</div>
@@ -116,7 +126,7 @@
 							<div class="card-body">
 								<h4 class="card-title">T-Shirts</h4>
 								<p class="card-text">Feel comfortable with our comfy t-shirts.</p>
-								<a href="#" class="btn btn-outline-success">See More</a>
+								<a href="services.html" class="btn btn-outline-success">See More</a>
 							</div>
 						</div>
 					</div>
@@ -126,7 +136,7 @@
 							<div class="card-body">
 								<h4 class="card-title">Shoes</h4>
 								<p class="card-text">Speedup yourself with our shoes</p>
-								<a href="#" class="btn btn-outline-success">See More</a>
+								<a href="services.html" class="btn btn-outline-success">See More</a>
 							</div>
 						</div>
 					</div>
@@ -134,37 +144,87 @@
 				</div>
 			</div>
 		</section>
+		<section class="my-4">
+			<div class="py-5">
+				<h2 class="text-center">Our Gallery</h2>
+				<hr class="w-25 m-auto">
+			</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal.jpg" class="img-fluid pb-4">
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal2.jpg" class="img-fluid pb-4">
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal3.jpg" class="img-fluid pb-4">
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal4.jpg" class="img-fluid pb-4">
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal5.jpg" class="img-fluid pb-4">
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/gal6.jpg" class="img-fluid pb-4">
+		</div>
+	</div>
+</div>
+		</section>
+
 <section class="my-4">
 	<div class="py-5">
-		<h2 class="text-center">Contact Us</h2>
+		<h2 class="text-center">For Support</h2>
 		<hr class="w-25 m-auto">
 	</div>
 	<div class="w-50 m-auto">
 		<form method="get" action="index.html">
 			<div class="form-group">
 			<label>Username</label>
-			<input type="text" name="Username" class="form-control" autocomplete="OFF" required />
+			<input type="text" name="Username" class="form-control" placeholder="Your Name" autocomplete="OFF" required />
 		</div>
 		<div class="form-group">
 			<label>Email</label>
-			<input type="text" name="Email" class="form-control" autocomplete="OFF" required />
+			<input type="text" name="Email" class="form-control" placeholder="abc@gmail.com" autocomplete="OFF" required />
 		</div>
 		<div class="form-group">
 			<label>Mobile No</label>
-			<input type="text" name="Mobile" class="form-control" autocomplete="OFF" required />
+			<input type="text" name="Mobile" class="form-control" placeholder="03xx-xxxxxxx" autocomplete="OFF" required />
 			</div>
 			<div class="form-group">
 			<label>Message</label>
-			<textarea class="form-control"></textarea>
+			<textarea class="form-control" placeholder="Your Message"></textarea>
 			</div>
 			<button type="Submit" class="btn btn-success">Submit</button>
 			</div>
 		</form>
 	</div>
+	<div class="py-5">
+		
+		<hr class="w-25 m-auto">
+	</div>
+
 </section>
 
+
 <footer>
-	<h5 class="p-3 bg-dark text-white text-center">Designed By Rafay Khan</h5>
+	<div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Rafay Ahmed Khan</a>
+                        <a href="#">Shehryar Ali</a>
+                        <a href="#">Muhammad Ahmed Hamdani</a>
+                    </p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020    Design By : <b>Rafay A Khan & His Team</b>
+					</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </footer>
 
 	</body>
