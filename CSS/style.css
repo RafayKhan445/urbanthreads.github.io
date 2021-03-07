@@ -1,3 +1,4 @@
+
 *{ margin: 0; padding: 0; box-sizing: border-box; 
 font-family: 'Josefin Sans', sans-serif;
 }
@@ -13,10 +14,13 @@ font-family: 'Josefin Sans', sans-serif;
   	height:300px;
   }
 
-  .jumbotron{
-  	width: 100%;
-  	height: 200px;
-  }
+.jumbotron{
+    width: 100%;
+    height: 200px;
+    background-image:  url("../images/jumb.jpg");
+    color: white;
+    background-size: cover;
+}
 
 .footer {
     padding: 90px 0 80px !important;
